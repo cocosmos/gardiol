@@ -1,0 +1,5 @@
+# gardiol
+
+```sh
+sass --watch scss/style.scss:css/style.min.css --style=compressed
+```
