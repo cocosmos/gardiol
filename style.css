@@ -1,0 +1,13 @@
+/*
+Theme Name: MipamTheme
+Theme URI: https://mipamguillot.com
+Author: Mipam Guillot
+Author URI: https://mipamguillot.com
+Description: A theme made by Mipam Guillot based on Generatepress
+Version: 1
+Requires at least: 5.2
+Tested up to: 5.9
+Requires PHP: 5.6
+Template: GeneratePress
+*/
+@import "assets/css/style.min.css";
