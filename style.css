@@ -10,4 +10,4 @@ Tested up to: 5.9
 Requires PHP: 5.6
 Template: GeneratePress
 */
-@import "assets/css/style.min.css";
+@import "./assets/css/style.min.css";
