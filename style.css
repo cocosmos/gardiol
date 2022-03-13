@@ -8,6 +8,6 @@ Version: 1
 Requires at least: 5.2
 Tested up to: 5.9
 Requires PHP: 5.6
-Template: GeneratePress
+Template: Extra
 */
-@import "./assets/css/style.min.css";
+/* @import "./assets/css/style.min.css"; */

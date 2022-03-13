@@ -1,0 +1,65 @@
+.logo {
+  order: 0;
+  margin: 20px 0;
+  display: flex;
+  min-height: 70px;
+  min-width: 600px;
+}
+.mp-title {
+  min-height: 100px;
+  order: 1;
+  min-width: 600px;
+  margin-left: 50px;
+  &__main {
+    font-size: 25px;
+    word-wrap: break-word;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: $text;
+    margin: 0;
+  }
+  &__description {
+    font-size: 20px;
+
+    display: block;
+  }
+}
+#mp-title {
+  display: none;
+}
+@media (max-width: $large) {
+  .mp-title {
+    min-width: 300px;
+    color: $secondary;
+    align-items: center;
+    padding: 16px 0;
+    margin: 0;
+
+    &__main {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      margin: 0;
+      color: $secondary;
+    }
+  }
+  #mp-title {
+    display: block;
+  }
+}
+#et-navigation > ul > li > a {
+  padding: 0;
+}
+
+#main-header .container {
+  min-height: 68px;
+}
+
+#top-header {
+  padding: 0;
+}
+
+#et-info .et-extra-social-icons .et-extra-icon:before {
+  font-size: 20px;
+}
