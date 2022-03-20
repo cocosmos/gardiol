@@ -83,16 +83,19 @@
 					<div id="et-info">
 
 						<?php if ( $header_vars['output_header_social_icons'] ) { ?>
+							
 
 						<!-- .et-extra-social-icons -->
 						<ul class="et-extra-social-icons" style="<?php extra_visible_display_css( $header_vars['show_header_social_icons'] ); ?>">
 							<?php $social_icons = extra_get_social_networks(); ?>
 							<?php foreach ( $social_icons as $social_icon => $social_icon_title ) { ?>
+								
 								<?php $social_icon = esc_attr( $social_icon ); ?>
 								<?php $social_icon_url = et_get_option( sprintf( '%s_url', $social_icon ), '' ); ?>
 								<?php if ( ! empty( $social_icon_url ) && 'on' === et_get_option( "show_{$social_icon}_icon", 'on' ) ) { ?>
 								<li class="et-extra-social-icon <?php echo $social_icon; ?>">
-									<a href="<?php echo esc_url( $social_icon_url ); ?>" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-<?php echo $social_icon; ?>"></a>
+									<a href="<?php echo esc_url( $social_icon_url ); ?>" target="_blank" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-<?php echo $social_icon; ?>"></a>
+						
 								</li>
 								<?php } ?>
 							<?php } ?>
