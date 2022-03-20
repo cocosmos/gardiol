@@ -1,0 +1,10 @@
+.footer__color {
+  color: $secondary;
+}
+#footer {
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
+  box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
+  color: $text;
+}
