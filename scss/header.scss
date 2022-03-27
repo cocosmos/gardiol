@@ -28,7 +28,16 @@
 #mp-title {
   display: none;
 }
+.mp-title__description {
+  color: #4f4f4f;
+}
+.et-top-search {
+  display: none;
+}
 @media (max-width: $large) {
+  .et-top-search {
+    display: block;
+  }
   .mp-title {
     min-width: 300px;
     color: $secondary;
@@ -47,6 +56,9 @@
   #mp-title {
     display: block;
   }
+  .mp-title__description {
+    color: white;
+  }
 }
 #et-navigation > ul > li > a {
   padding: 0;
@@ -63,7 +75,7 @@
 #et-info .et-extra-social-icons .et-extra-icon:before {
   font-size: 20px;
 }
-.et-extra-icon-linkedin .et-extra-icon-background-hover {
-  background: #127bb6 !important;
-  // opacity: 0.5;
+
+#et-info .et-extra-social-icons .et-extra-icon {
+  background: $primary !important;
 }

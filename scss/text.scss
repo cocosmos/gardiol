@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/calibri_regular.ttf");
+}
+p,
+span,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Calibri !important;
+}
+
+.post-nav .nav-links .button:before {
+  color: white;
+}
+.post-nav .nav-links:hover .button:before {
+  color: $primary;
+}
+
+#page-container .button,
+#page-container button,
+#page-container button[type="submit"],
+#page-container input[type="submit"],
+#page-container input[type="reset"],
+#page-container input[type="button"],
+.read-more-button,
+.comment-body
+  .comment_area
+  .comment-content
+  .reply-container
+  .comment-reply-link,
+.widget_tag_cloud a,
+.widget_tag_cloud a:visited,
+.post-nav .nav-links .button,
+a.read-more-button,
+a.read-more-button:visited,
+#footer .widget_tag_cloud a,
+#footer .widget_tag_cloud a:visited,
+#footer a.read-more-button,
+#footer a.read-more-button:visited,
+#footer .button,
+#footer button,
+#footer button[type="submit"],
+#footer input[type="submit"],
+#footer input[type="reset"],
+#footer input[type="button"],
+.et_pb_button {
+  border: solid;
+}

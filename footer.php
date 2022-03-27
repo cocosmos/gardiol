@@ -21,8 +21,6 @@ if ( ! empty( $footer_above_ad ) ) { ?>
 		<div id="footer-bottom">
 			<div class="container">
 
-				<!-- Footer Info -->
-				<p id="footer-info"><?php printf( et_get_safe_localization( __( '© 2022 %2$s | Developed by %1$s', 'extra' ) ), '<a href="https://www.mipam.dev" title="Mipam Guillot">Mipam Guillot</a>', '<span class="footer__color">Knowledge is power</span>' ); ?></p>
 
 				<!-- Footer Navigation -->
 				<?php if ( has_nav_menu( 'footer-menu' ) || false !== et_get_option( 'show_footer_social_icons', true ) ) { ?>
@@ -55,14 +53,19 @@ if ( ! empty( $footer_above_ad ) ) { ?>
 							<?php } ?>
 						<?php } ?>
 							<li class="et-extra-social-icon">
-								<a href="/contact" class="et-extra-icon et-extra-icon-background-none"><i class="fas fa-envelope"></i></a>
+								<a href="/contact" class="et-extra-icon et-extra-icon-basic_email et-extra-icon-background-none"></a>
 							</li>
 						</ul>
 					<?php
 					}
 					?>
+
 				</div> <!-- /#et-footer-nav -->
 				<?php } ?>
+				<!-- Footer Info -->
+
+				<p id="footer-info"><?php printf( et_get_safe_localization( __( '© 2022 | %2$s | Developed by %1$s', 'extra' ) ), '<a href="https://www.mipam.dev" title="Mipam Guillot" target="_blank">Mipam Guillot</a>', '<span><b>Knowledge is power</b></span>' ); ?></p>
+
 
 			</div>
 		</div>

@@ -103,11 +103,11 @@
 						<?php } ?>
 
 						<!-- .et-top-search -->
-						<?php if ( $header_vars['output_header_search_field'] ) { ?>
+					 	<?php if ( $header_vars['output_header_search_field'] ) { ?>
 						<div class="et-top-search" style="<?php extra_visible_display_css( $header_vars['show_header_search_field'] ); ?>">
 							<?php extra_header_search_field(); ?>
 						</div>
-						<?php } ?>
+						<?php } ?> 
 
 						<!-- cart -->
 						<?php if ( $header_vars['output_header_cart_total'] ) { ?>
@@ -115,7 +115,7 @@
 							<?php extra_header_cart_total(); ?>
 						</span>
 						<?php } ?>
-					</div>
+					 </div> 
 				</div><!-- /.container -->
 			</div><!-- /#top-header -->
 

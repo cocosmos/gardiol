@@ -1,0 +1,29 @@
+@media print {
+  #main-header-wrapper,
+  #et-info {
+    display: none;
+  }
+  article,
+  .et_pb_extra_column_main {
+    margin: 0;
+    padding: 0;
+  }
+  .et_pb_extra_column_sidebar,
+  .et_pb_widget {
+    display: none;
+  }
+  footer,
+  #comment-wrap,
+  .post-nav,
+  .post-footer {
+    display: none;
+  }
+  h1 {
+    page-break-before: always;
+    font-size: 20pt;
+  }
+
+  @page {
+    size: A4;
+  }
+}
