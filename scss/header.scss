@@ -38,6 +38,9 @@
   .et-top-search {
     display: block;
   }
+  #header_search-icon {
+    display: none;
+  }
   .mp-title {
     min-width: 300px;
     color: $secondary;
@@ -78,4 +81,23 @@
 
 #et-info .et-extra-social-icons .et-extra-icon {
   background: $primary !important;
+}
+
+#header_search-icon {
+  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .mp-title__main {
+    font-size: 35px;
+    line-height: 1;
+  }
+  .mp-title__description {
+    font-size: 25px;
+  }
+  #et-menu li {
+    font-size: 20px;
+  }
+  #et-navigation > ul > li {
+    margin: 0 25px;
+  }
 }

@@ -97,10 +97,30 @@
 									<a href="<?php echo esc_url( $social_icon_url ); ?>" target="_blank" class="et-extra-icon et-extra-icon-background-hover et-extra-icon-<?php echo $social_icon; ?>"></a>
 						
 								</li>
+								<li class="et-extra-social-icon">
+								<a href="/contact" class="et-extra-icon et-extra-icon-basic_email et-extra-icon-background-none"></a>
+							</li>
+							<!-- Popup form-->
+							<li id="header_search-icon" class="et-extra-social-icon">
+								
+								<svg class="search-icon" viewBox="0 0 24 24" width="35" height="35">
+			        <path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
+			    </svg>
+							</li>
 								<?php } ?>
 							<?php } ?>
 						</ul>
 						<?php } ?>
+						<div id="popup">
+	<div id="wrapper">
+<form id="formPopup" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<input type="search" class="header__search-input" name="s" value="" placeholder="Search …" required="">
+	
+	<button class="header__search-button" type="submit" ><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 30 30" width="35px" height="35px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg></button>
+			    	
+			    </form>
+<p class="header__search-operator">You can try the operators : <br> AND - OR - " "</p>
+</div>
 
 						<!-- .et-top-search -->
 					 	<?php if ( $header_vars['output_header_search_field'] ) { ?>

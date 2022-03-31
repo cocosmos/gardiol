@@ -54,23 +54,78 @@
 }
 .post {
   &__excerpt-image {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
     display: flex;
     width: 100%;
     align-items: center;
     .excerpt {
-      width: 80%;
+      width: 50%;
       margin-right: 20px;
       p {
         margin-bottom: 0;
       }
     }
   }
+  &__image {
+    width: 45% !important;
+  }
+
   &__readmore {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    .read-more-button {
+      max-height: 43px;
+    }
+  }
+  &__share {
+    &-icon {
+      display: flex;
+      align-items: center;
+      min-width: 90px;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    &-text {
+      margin-left: 5px;
+    }
+    .social-icons {
+      display: none;
+      position: absolute;
+    }
+    :hover ~ .social-icons {
+      display: block;
+      animation: shareTransition 300ms ease-in;
+    }
+    @keyframes shareTransition {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+    .social-icons:hover {
+      display: block;
+    }
+    .et-extra-icon {
+      background: rgb(0 0 0 / 55%);
+    }
+
+    .et-extra-icon-basic_print {
+      display: none;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
   }
 }
+
 .et_pb_extra_module .post-meta {
   font-size: 17px;
 }
@@ -85,4 +140,47 @@
 }
 .comment-form-url {
   display: none;
+}
+.single article.type-tips {
+  padding-top: 30px;
+}
+
+.wp-block-file a.wp-block-file__button {
+  background: #2f5496;
+  border: 1px solid #2f5496;
+}
+.wp-block-file a.wp-block-file__button:hover {
+  background: transparent;
+  color: #2f5496;
+}
+
+@media (max-width: 1024px) {
+  .mp-title {
+    min-width: 264px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page .post-wrap {
+    padding: 10px;
+  }
+  .post__excerpt-image .excerpt {
+    width: 100%;
+    margin-right: 0;
+  }
+  .post-title .entry-title {
+    text-align: center;
+  }
+  .page .post-wrap h1 {
+    text-align: center;
+  }
+  .container {
+    width: 97%;
+  }
+  #footer .container {
+    width: 90%;
+  }
+  .post__image {
+    width: 80% !important;
+  }
 }

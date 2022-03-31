@@ -37,6 +37,10 @@ function load_stylesheets()
 	wp_register_style('print', get_stylesheet_directory_uri() . '/css/print.css', array(), 1, 'all');
     wp_enqueue_style('print');
 
+    wp_enqueue_script( 'searchForm', get_stylesheet_directory_uri() . '/js/searchForm.js', array(), '', true );
+    wp_enqueue_script( 'nostars', get_stylesheet_directory_uri() . '/js/nostars.js', array(), '', true );
+
+
 }
 add_action( 'wp_enqueue_scripts', 'load_stylesheets' );
 
@@ -75,7 +79,7 @@ function register_tips_post_type() {
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'post',
-        'show_in_rest'        => false,
+        'show_in_rest'        => true,
 		//'taxonomies'=>array( 'category', 'tips' ),
 
         

@@ -1,0 +1,50 @@
+#popup {
+  background: black;
+  opacity: 0.85;
+  position: fixed;
+  display: none;
+  z-index: 5000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+
+  > div {
+    max-width: 700px; // Max-width of popup can be changed
+    width: 100%; // Width of popup
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    padding: 10px;
+    z-index: 5001;
+    text-align: center;
+    #formPopup {
+      display: flex;
+      justify-content: center;
+    }
+    .header {
+      &__search-input {
+        background: transparent;
+        border: 1px solid #2f5496;
+        padding: 30px 100px 30px 30px;
+        color: white;
+        font-size: 25px;
+      }
+      &__search-input:active {
+        border-color: #ebf0f9;
+      }
+      &__search-button {
+        background: transparent !important;
+        border: none;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+        margin-left: -70px;
+      }
+      &__search-operator {
+        color: white;
+      }
+    }
+  }
+}

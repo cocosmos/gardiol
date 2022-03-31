@@ -1,0 +1,15 @@
+.swiper-slide:not(:hover) .e-overlay-animation-fade {
+  opacity: 1 !important;
+}
+.elementor-carousel-image-overlay {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  height: 10% !important;
+  width: 80% !important;
+  padding: 50px 5px !important;
+}
+
+.elementor-widget-image-box .elementor-widget-container {
+  min-height: 825px;
+}

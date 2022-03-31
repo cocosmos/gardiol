@@ -8,3 +8,18 @@
   box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
   color: $text;
 }
+#footer-bottom {
+  text-align: center;
+}
+#footer-info {
+  display: block;
+}
+#footer-nav {
+  display: contents;
+}
+#et-info .et-top-search .et-search-field {
+  background: rgba(255, 255, 255, 0.1);
+}
+#footer .et_pb_widget .widgettitle {
+  color: #2f5496;
+}
