@@ -101,3 +101,22 @@
     margin: 0 25px;
   }
 }
+
+#et-info .et-top-search .et-search-field {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+#et-info .et-top-search .et-search-field {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+@media (max-width: 310px) {
+  .mp-title {
+    min-width: 240px !important;
+  }
+  .mp-title__main {
+    font-size: 16px !important;
+  }
+  .mp-title__description {
+    font-size: 16px !important;
+  }
+}

@@ -17,9 +17,22 @@
 #footer-nav {
   display: contents;
 }
-#et-info .et-top-search .et-search-field {
-  background: rgba(255, 255, 255, 0.1);
-}
+
 #footer .et_pb_widget .widgettitle {
   color: #2f5496;
+}
+#footer h4,
+#footer .et_pb_widget h4.widgettitle {
+  font-size: 25px !important;
+}
+#footer,
+#footer li,
+#footer p,
+#footer a,
+#footer span,
+#footer .post-meta {
+  font-size: 20px !important;
+}
+#footer .et_pb_widget .widgettitle {
+  padding-bottom: 10px;
 }
